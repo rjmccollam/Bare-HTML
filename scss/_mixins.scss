@@ -13,3 +13,22 @@
 	height: $height;
 	width: $width;
 }
+
+// Top to Bottom Gradient
+@mixin top-gradient ($top, $bottom) {
+	background-color: $bottom; 
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($top), to($bottom));
+    background-image: -webkit-linear-gradient(top, $top, $bottom); 
+    background-image:    -moz-linear-gradient(top, $top, $bottom);
+    background-image:     -ms-linear-gradient(top, $top, $bottom);
+    background-image:      -o-linear-gradient(top, $top, $bottom);
+}
+
+// Basic CSS Scale
+@mixin scale ($value) {
+	-webkit-transform: scale($value);
+    -moz-transform:    scale($value);
+    -ms-transform:     scale($value);
+    -o-transform:      scale($value);
+    transform:         scale($value);
+}
