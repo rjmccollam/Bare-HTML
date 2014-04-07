@@ -1,5 +1,5 @@
 body {background: $bg; font-family: $primary-font; font-size: $font-size; line-height: $line-height; color: $text-color;}
-.container {width: 978px; margin: 0 auto; position: relative;}
+.container {width: 90%; max-width: 978px; margin: 0 auto; position: relative;}
 
 .right {float: right;}
 .left {float: left;}

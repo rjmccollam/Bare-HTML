@@ -14,6 +14,13 @@
 	width: $width;
 }
 
+// Retina Sprite
+@mixin retina-sprite() {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: url(images/sprite@2x.png); background-size: 1000px 1000px;
+	}
+}
+
 // Top to Bottom Gradient
 @mixin top-gradient ($top, $bottom) {
 	background-color: $bottom; 
